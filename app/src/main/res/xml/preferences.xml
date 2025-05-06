@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Категория: Внешний вид -->
+    <androidx.preference.PreferenceCategory
+        app:key="prefs_category_appearance"
+        app:title="@string/settings_category_appearance">
+
+        <androidx.preference.ListPreference
+            app:key="@string/settings_theme_key"
+            app:title="@string/settings_theme_title"
+            app:summary="@string/settings_theme_summary"
+        app:entries="@array/theme_entries"
+        app:entryValues="@array/theme_values"
+        app:defaultValue="@string/settings_theme_default_value"
+        app:icon="@drawable/ic_brightness" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Категория: Безопасность -->
+    <androidx.preference.PreferenceCategory
+        app:key="prefs_category_security"
+        app:title="@string/settings_category_security">
+
+        <androidx.preference.SwitchPreferenceCompat
+            app:key="@string/settings_app_lock_key"
+            app:title="@string/settings_app_lock_title"
+            app:summaryOn="@string/settings_app_lock_summary_on"
+            app:summaryOff="@string/settings_app_lock_summary_off"
+            app:defaultValue="false"
+            app:icon="@drawable/ic_fingerprint" />
+
+        <androidx.preference.ListPreference
+            app:key="@string/settings_clipboard_clear_key"
+            app:title="@string/settings_clipboard_clear_title"
+            app:summary="@string/settings_clipboard_clear_summary"
+        app:entries="@array/clipboard_clear_entries"
+        app:entryValues="@array/clipboard_clear_values"
+        app:defaultValue="@string/settings_clipboard_clear_default_value"
+        app:icon="@drawable/ic_clipboard_clear" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Категория: Общее -->
+    <androidx.preference.PreferenceCategory
+        app:key="prefs_category_general"
+        app:title="@string/settings_category_general">
+
+        <Preference
+            app:key="@string/settings_trash_key"
+            app:title="@string/settings_trash_bin_title"
+            app:summary="@string/settings_trash_bin_summary"
+            app:icon="@drawable/ic_delete" />
+
+        <Preference
+            app:key="@string/settings_security_log_key"
+            app:title="@string/settings_security_log_title"
+            app:summary="@string/settings_security_log_summary"
+            app:icon="@drawable/ic_security_log" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Категория: Аккаунт -->
+    <androidx.preference.PreferenceCategory
+        app:key="prefs_category_account"
+        app:title="@string/settings_category_account">
+
+        <!-- Элемент для Выхода -->
+        <Preference
+            app:key="@string/settings_logout_key"
+            app:title="@string/settings_logout_title"
+            app:summary="@string/settings_logout_summary"
+            app:icon="@drawable/ic_logout"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

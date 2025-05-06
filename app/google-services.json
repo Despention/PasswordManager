@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "946070454563",
+    "project_id": "tutor-5b3bd",
+    "storage_bucket": "tutor-5b3bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946070454563:android:1b0c114e15becdecadcc96",
+        "android_client_info": {
+          "package_name": "com.example.tutor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRnC10LBGMkMdRN0NCFdp1CkOfjEC_wko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

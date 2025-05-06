@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Базовые цвета -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- =========================================== -->
+    <!-- == ВАШИ ЦВЕТА ДЛЯ СВЕТЛОЙ ТЕМЫ           == -->
+    <!-- =========================================== -->
+    <color name="light_primary">#6A7793</color>         <!-- Основной (темно-сине-серый) -->
+    <color name="light_surface">#CFD1E0</color>         <!-- Фон карточек (светло-серый) -->
+    <color name="light_background">#F9F7FA</color>      <!-- Фон экрана (очень светлый) -->
+    <color name="light_secondary">#D0C9D0</color>        <!-- Вторичный (светло-лилово-серый) -->
+    <color name="light_primary_variant">#B4A8AA</color>  <!-- Вариант основного (серо-розовый) -->
+
+    <!-- Цвета "на" (для текста/иконок на фоне соответствующих цветов) -->
+    <color name="light_onPrimary">#FFFFFF</color>       <!-- Текст на Primary (белый) -->
+    <color name="light_onSecondary">#000000</color>      <!-- Текст на Secondary (черный) -->
+    <color name="light_onSurface">#000000</color>        <!-- Текст на Surface (черный) -->
+    <color name="light_onBackground">#000000</color>     <!-- Текст на Background (черный) -->
+
+    <!-- Цвета ошибок (стандартные Material) -->
+    <color name="light_error">#B00020</color>
+    <color name="light_onError">#FFFFFF</color>
+
+    <!-- =========================================== -->
+    <!-- == ВАШИ ЦВЕТА ДЛЯ ТЕМНОЙ ТЕМЫ            == -->
+    <!-- =========================================== -->
+    <color name="dark_background">#22222E</color>      <!-- Фон экрана (очень темный сине-серый) -->
+    <color name="dark_surface">#393A5A</color>         <!-- Фон карточек (темно-сине-фиолетовый) -->
+    <color name="dark_primary">#706F8E</color>         <!-- Основной (средний сине-фиолетовый) -->
+    <color name="dark_secondary">#ADA9BA</color>        <!-- Вторичный (светлый лилово-серый) -->
+    <color name="dark_primary_variant">#ADA9BA</color>  <!-- Вариант основного (совпадает со Secondary) -->
+
+    <!-- Цвета "на" (для текста/иконок на фоне соответствующих цветов) -->
+    <color name="dark_onPrimary">#E9E9E9</color>       <!-- Текст на Primary (очень светлый серый) -->
+    <color name="dark_onSecondary">#22222E</color>      <!-- Текст на Secondary (темный, как фон) -->
+    <color name="dark_onSurface">#E9E9E9</color>        <!-- Текст на Surface (очень светлый серый) -->
+    <color name="dark_onBackground">#E9E9E9</color>     <!-- Текст на Background (очень светлый серый) -->
+
+    <!-- Цвета ошибок (стандартные Material для темной темы) -->
+    <color name="dark_error">#CF6679</color>
+    <color name="dark_onError">#000000</color>
+
+    <!-- res/values/colors.xml -->
+    <color name="light_surface_alpha">#AACFD1E0</color> <!-- ~66% alpha of #CFD1E0 -->
+    <color name="dark_surface_alpha">#AA393A5A</color>  <!-- ~66% alpha of #393A5A -->
+
+    <color name="divider_light">#1F000000</color> <!-- Черный с ~12% alpha -->
+    <color name="divider_dark">#1FE9E9E9</color> <!-- Светло-серый с ~12% alpha -->
+
+    <color name="password_strength_very_weak">#F44336</color> <!-- Красный -->
+    <color name="password_strength_weak">#FF9800</color> <!-- Оранжевый -->
+    <color name="password_strength_medium">#FFEB3B</color> <!-- Желтый -->
+    <color name="password_strength_strong">#8BC34A</color> <!-- Светло-зеленый -->
+    <color name="password_strength_very_strong">#4CAF50</color> <!-- Зеленый -->
+    <color name="password_strength_default">@android:color/transparent</color>
+
+</resources>

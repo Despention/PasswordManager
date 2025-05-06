@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Макет для элементов в выпадающем списке Spinner -->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:ellipsize="marquee"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:textColor="?android:attr/textColorPrimary"/>

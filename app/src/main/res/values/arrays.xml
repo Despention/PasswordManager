@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_entries">
+        <item>@string/theme_entry_light</item>
+        <item>@string/theme_entry_dark</item>
+        <item>@string/theme_entry_system</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>@string/theme_value_light</item>
+        <item>@string/theme_value_dark</item>
+        <item>@string/theme_value_system</item>
+    </string-array>
+
+
+    <!-- НАЧАЛО: Массивы для Очистки Буфера обмена -->
+    <string-array name="clipboard_clear_entries">
+        <item>@string/clipboard_clear_entry_30s</item>
+        <item>@string/clipboard_clear_entry_60s</item>
+        <item>@string/clipboard_clear_entry_90s</item>
+        <item>@string/clipboard_clear_entry_never</item>
+    </string-array>
+    <string-array name="clipboard_clear_values">
+        <item>@string/clipboard_clear_value_30s</item>
+        <item>@string/clipboard_clear_value_60s</item>
+        <item>@string/clipboard_clear_value_90s</item>
+        <item>@string/clipboard_clear_value_never</item>
+    </string-array>
+    <!-- КОНЕЦ: Массивы для Очистки Буфера обмена -->
+</resources>

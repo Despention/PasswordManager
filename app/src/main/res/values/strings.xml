@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Tutor</string> <!-- Ваше название приложения -->
+
+    <!-- Строки для Bottom Navigation и Заголовков Фрагментов -->
+    <string name="title_profile">Profile</string> <!-- ВОТ ЭТА СТРОКА НУЖНА -->
+    <string name="title_passwords">Passwords</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Строки для LoginActivity -->
+    <string name="error_email_required">Email required</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_password_required">Password required</string>
+    <string name="error_login_failed">Login failed: %1$s</string> <!-- %1$s для сообщения об ошибке -->
+    <string name="unknown_error">Unknown error occurred</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="no_account_register">No account? Register here</string>
+
+    <!-- Строки для RegisterActivity -->
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_confirm_password_required">Confirm your password</string>
+    <string name="error_passwords_do_not_match">Passwords do not match</string>
+    <string name="error_registration_failed">Registration failed: %1$s</string>
+    <string name="register_button">Register</string>
+    <string name="already_have_account">Already have an account? Login here</string>
+
+    <!-- Строки для ProfileFragment -->
+    <string name="no_email">No Email Provided</string>
+    <string name="total_passwords_format">Total Passwords: %d</string> <!-- %d для числа -->
+    <string name="passwords_by_category">Passwords by Category:</string>
+    <string name="no_passwords_yet">No passwords saved yet.</string>
+    <string name="logout">Logout</string>
+    <string name="profile_avatar">Profile Avatar</string>
+
+
+    <!-- Строки для PasswordsFragment -->
+    <string name="add_password">Add Password</string>
+    <string name="filter_by_category">Filter by category:</string>
+    <string name="password_deleted">Password deleted</string>
+    <string name="undo">Undo</string>
+    <string name="all_categories">All</string> <!-- Для Spinner фильтра -->
+
+
+    <!-- Строки для SettingsFragment -->
+    <string name="settings_placeholder">Settings Screen Placeholder</string>
+
+
+    <!-- Строки для AddPasswordDialogFragment -->
+    <string name="add_new_password">Add New Password</string>
+    <string name="hint_service_title">Service / Title</string>
+    <string name="hint_username_email">Username / Email</string>
+    <string name="add_password_button">Add</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="password_added_success">Password added successfully</string>
+    <string name="select_category">Select Category</string>
+
+
+    <!-- Другие строки, если нужны -->
+    <string name="remember_me">Remember Me</string>
+
+    <string name="toggle_password_visibility">Toggle password visibility</string>
+    <string name="last_modified_format">Last modified: %1$s</string>
+
+    <!-- ... ваши другие строки ... -->
+
+    <!-- Строки для Настроек Темы -->
+    <string name="settings_category_appearance">Appearance</string>
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_summary">Choose application theme</string>
+    <string name="settings_theme_key">prefs_theme_key</string> <!-- Ключ для SharedPreferences -->
+    <string name="settings_theme_default_value">system</string> <!-- Значение по умолчанию -->
+
+    <!-- Названия опций темы (для пользователя) -->
+    <string name="theme_entry_light">Light</string>
+    <string name="theme_entry_dark">Dark</string>
+    <string name="theme_entry_system">System Default</string>
+
+    <!-- Значения опций темы (для сохранения в SharedPreferences) -->
+    <string name="theme_value_light">light</string>
+    <string name="theme_value_dark">dark</string>
+    <string name="theme_value_system">system</string>
+
+    <string name="detail_username_label">Username:</string>
+    <string name="detail_password_label">Password:</string>
+    <string name="detail_category_label">Category:</string>
+    <string name="detail_last_modified_label">Last Modified:</string>
+    <string name="close_button">Close</string>
+
+    <string name="hint_website_url_optional">Website URL (Optional)</string>
+    <string name="password_moved_to_trash">Password moved to trash</string>
+
+    <!-- ... -->
+    <string name="title_trash">Trash Bin</string>
+    <string name="trash_is_empty">Trash is empty</string>
+    <string name="empty_trash">Empty Trash</string>
+    <string name="action_restore">Restore</string>
+    <string name="action_delete_permanently">Delete Permanently</string>
+    <string name="confirm_empty_trash_title">Empty Trash?</string>
+    <string name="confirm_empty_trash_message">Are you sure you want to permanently delete all items in the trash?</string>
+    <string name="confirm_delete_item_title">Delete Item?</string>
+    <string name="confirm_delete_item_message">Are you sure you want to permanently delete this item?</string>
+    <string name="item_restored">Item restored</string>
+    <string name="item_deleted_permanently">Item deleted permanently</string>
+    <string name="trash_emptied">Trash emptied</string>
+    <string name="settings_trash_bin_title">Trash Bin</string>
+    <string name="settings_trash_bin_summary">View and manage deleted items</string>
+    <string name="settings_trash_key">prefs_trash_key</string>
+
+    <string name="total_passwords_label">Total Passwords</string>
+
+
+    <!-- Настройка Блокировки Приложения (Биометрия) -->
+    <string name="settings_app_lock_title">App Lock</string>
+    <string name="settings_app_lock_summary_on">App lock enabled (Biometrics)</string>
+    <string name="settings_app_lock_summary_off">App lock disabled</string>
+    <string name="settings_app_lock_key">prefs_app_lock_key</string>
+
+    <!-- Настройка Очистки Буфера Обмена -->
+    <string name="settings_clipboard_clear_title">Clear Clipboard Timer</string>
+    <string name="settings_clipboard_clear_summary">Automatically clear copied passwords after delay (%s)</string>
+    <string name="settings_clipboard_clear_key">prefs_clipboard_clear_key</string>
+    <string name="settings_clipboard_clear_default_value">60</string> <!-- Значение по умолчанию (60 секунд) -->
+
+    <!-- Опции для Очистки Буфера Обмена -->
+    <string name="clipboard_clear_entry_30s">30 seconds</string>
+    <string name="clipboard_clear_entry_60s">60 seconds</string>
+    <string name="clipboard_clear_entry_90s">90 seconds</string>
+    <string name="clipboard_clear_entry_never">Never</string>
+    <!-- Значения для Очистки Буфера Обмена (в секундах, 0 = Никогда) -->
+    <string name="clipboard_clear_value_30s">30</string>
+    <string name="clipboard_clear_value_60s">60</string>
+    <string name="clipboard_clear_value_90s">90</string>
+    <string name="clipboard_clear_value_never">0</string>
+
+
+
+    <!-- Настройка Выхода -->
+    <string name="settings_logout_title">Logout</string>
+    <string name="settings_logout_summary">Sign out from your account</string>
+    <string name="settings_logout_key">prefs_logout_key</string>
+    <string name="confirm_logout_title">Confirm Logout</string>
+    <string name="confirm_logout_message">Are you sure you want to log out?</string>
+
+    <string name="settings_category_general">General</string>
+    <string name="settings_category_account">Account</string>
+    <string name="settings_category_security">Security</string>
+
+    <string name="biometric_prompt_title">Unlock %1$s</string> <!-- %1$s will be replaced by app name -->
+    <string name="biometric_prompt_subtitle_unlock">Confirm biometrics to unlock the app</string>
+    <string name="biometric_prompt_subtitle_enable">Confirm biometrics to enable app lock</string> <!-- Also needed for SettingsFragment -->
+    <string name="biometric_prompt_use_password_fallback">Use PIN/Password</string> <!-- Or simply "Cancel" -->
+    <string name="biometric_enroll_dialog_title">Enroll Biometrics</string>
+    <string name="biometric_enroll_dialog_message">To use app lock, you need to set up biometric authentication (e.g., fingerprint, face) in your device\'s system settings.</string>
+    <string name="biometric_enroll_dialog_settings_button">Go to Settings</string>
+    <string name="biometric_error_no_hardware">Biometric hardware not available on this device.</string>
+    <string name="biometric_error_hw_unavailable">Biometric hardware is currently unavailable.</string>
+    <string name="biometric_error_none_enrolled">No biometrics enrolled. Please set up in system settings.</string>
+    <string name="biometric_error_unknown">Biometric authentication cannot be used.</string>
+    <string name="biometric_not_available_error">Biometric authentication not available</string>
+    <string name="settings_app_lock_enabled_toast">App Lock Enabled</string>
+    <string name="settings_app_lock_disabled_toast">App Lock Disabled</string>
+
+    <!-- Security Log -->
+    <string name="title_security_log">Security Log</string>
+    <string name="settings_security_log_key">pref_security_log_key</string>
+    <string name="settings_security_log_title">View Security Log</string>
+    <string name="settings_security_log_summary">See recent login attempts, password changes, etc.</string>
+    <string name="clear_log">Clear Log</string>
+    <string name="security_log_is_empty">Security log is empty.</string>
+    <string name="confirm_clear_log_title">Clear Security Log?</string>
+    <string name="confirm_clear_log_message">Are you sure you want to permanently delete all security log entries?</string>
+    <string name="action_clear_log_confirm">Clear</string>
+    <string name="security_log_cleared">Security log cleared.</string>
+
+    <string name="profile_saved_success">Профиль успешно сохранен</string>
+    <string name="loading_data">Загрузка данных...</string>
+    <string name="no_email_available">Email недоступен</string>
+    <string name="navigate_up">Navigate Up</string> <!-- Можно перевести -->
+    <string name="add_password_dialog_label">Добавить пароль</string>
+
+    <!-- Строки для ProfileFragment (некоторые уже были) -->
+    <string name="statistics_header">Статистика</string>
+    <string name="stats_loading">Загрузка статистики...</string>
+    <string name="error_user_not_logged_in">Ошибка: Пользователь не авторизован</string>
+
+    <!-- Строки для EditProfileFragment -->
+    <string name="save">Сохранить</string>
+
+    <string name="already_have_account_login">Уже есть аккаунт? Войти</string>
+
+    <string name="password_helper_text">Минимум 6 символов</string>
+
+    <string name="strength_very_weak">Очень слабый</string>
+    <string name="strength_weak">Слабый</string>
+    <string name="strength_medium">Средний</string>
+    <string name="strength_strong">Надежный</string>
+    <string name="strength_very_strong">Очень надежный</string>
+
+</resources>

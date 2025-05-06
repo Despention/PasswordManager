@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_profile">
+
+    <!-- Фрагмент Профиля -->
+    <fragment
+        android:id="@+id/navigation_profile"
+    android:name="com.example.tutor.ui.fragments.ProfileFragment"
+    android:label="@string/title_profile"
+    tools:layout="@layout/fragment_profile" >
+    <action
+        android:id="@+id/action_profileFragment_to_editProfileFragment"
+        app:destination="@id/editProfileFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <!-- Глобальное действие к логу может быть здесь или выше -->
+</fragment>
+
+    <!-- Фрагмент Паролей -->
+<fragment
+android:id="@+id/navigation_passwords"
+    android:name="com.example.tutor.ui.fragments.PasswordsFragment"
+    android:label="@string/title_passwords"
+    tools:layout="@layout/fragment_passwords">
+<action
+android:id="@+id/action_passwords_to_addPasswordDialog"
+app:destination="@id/addPasswordDialogFragment"/>
+    </fragment>
+
+    <!-- Фрагмент Настроек -->
+<fragment
+android:id="@+id/navigation_settings"
+    android:name="com.example.tutor.ui.fragments.SettingsFragment"
+    android:label="@string/title_settings"
+    tools:context=".ui.SettingsFragment">
+<action
+android:id="@+id/action_settings_to_trash"
+app:destination="@id/navigation_trash"
+app:enterAnim="@anim/slide_in_right"
+app:exitAnim="@anim/slide_out_left"
+app:popEnterAnim="@anim/slide_in_left"
+app:popExitAnim="@anim/slide_out_right"/>
+<action
+android:id="@+id/action_settings_to_security_log"
+app:destination="@id/navigation_security_log"
+app:enterAnim="@anim/slide_in_right"
+app:exitAnim="@anim/slide_out_left"
+app:popEnterAnim="@anim/slide_in_left"
+app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <!-- Диалог добавления пароля -->
+<dialog
+android:id="@+id/addPasswordDialogFragment"
+android:name="com.example.tutor.ui.fragments.AddPasswordDialogFragment"
+android:label="@string/add_password_dialog_label"
+tools:layout="@layout/dialog_add_password" />
+
+    <!-- Фрагмент Корзины -->
+<fragment
+android:id="@+id/navigation_trash"
+android:name="com.example.tutor.ui.fragments.TrashFragment"
+android:label="@string/title_trash"
+tools:layout="@layout/fragment_trash" />
+
+    <!-- Фрагмент Журнала Безопасности -->
+<fragment
+android:id="@+id/navigation_security_log"
+android:name="com.example.tutor.ui.fragments.SecurityLogFragment"
+android:label="@string/title_security_log"
+tools:layout="@layout/fragment_security_log" />
+
+    <!-- Фрагмент Редактирования Профиля -->
+<fragment
+android:id="@+id/editProfileFragment"
+android:name="com.example.tutor.ui.fragments.EditProfileFragment"
+android:label="Редактировать профиль"
+tools:layout="@layout/fragment_edit_profile" />
+
+    <!-- Глобальное действие для перехода к журналу безопасности (если нужно из нескольких мест) -->
+<action android:id="@+id/action_global_to_securityLogFragment"
+app:destination="@id/navigation_security_log"
+app:enterAnim="@anim/slide_in_right"
+app:exitAnim="@anim/slide_out_left"
+app:popEnterAnim="@anim/slide_in_left"
+app:popExitAnim="@anim/slide_out_right"/>
+
+    </navigation>
